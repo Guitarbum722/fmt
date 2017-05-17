@@ -42,3 +42,10 @@ func TestAddUint8s(t *testing.T) {
 		}
 	}
 }
+
+func BenchmarkAddUint8s(b *testing.B) {
+	b.ReportAllocs()
+	for i := 0; i < b.N; i++ {
+		AddUint8s(uint8Cases[1].input[0], uint8Cases[1].input[1])
+	}
+}
