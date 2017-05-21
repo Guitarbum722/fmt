@@ -21,3 +21,24 @@ func AddUint8s(first, second []uint8) []uint8 {
 
 	return result
 }
+
+// AddToUint8Slice adds toAdd to each element of nums
+func AddToUint8Slice(nums []uint8, toAdd uint8) {
+	for i := range nums {
+		nums[i] += toAdd
+	}
+}
+
+// SubtractFromUint8Slice subtracts toSubtract from each element of nums
+func SubtractFromUint8Slice(nums []uint8, toSubtract uint8) {
+	for i := range nums {
+		nums[i] -= toSubtract
+	}
+}
+
+// MultiplyForUint8Slice multiplies each element of nums by multiplier
+func MultiplyForUint8Slice(nums []uint8, multiplier uint8) {
+	for i := range nums {
+		nums[i] *= multiplier
+	}
+}
