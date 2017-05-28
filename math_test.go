@@ -24,6 +24,14 @@ var primeTests = []struct {
 		2,
 		true,
 	},
+	{
+		0,
+		false,
+	},
+	{
+		1,
+		false,
+	},
 }
 
 func TestIsPrime(t *testing.T) {

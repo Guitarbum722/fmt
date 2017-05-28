@@ -13,5 +13,8 @@ func IsPrime(n int) bool {
 			return false
 		}
 	}
+	if n < 2 {
+		return false
+	}
 	return true
 }
