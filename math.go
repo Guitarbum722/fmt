@@ -2,6 +2,9 @@ package box
 
 // IsPrime returns true if input n is a prime number
 func IsPrime(n int) bool {
+	if n == 2 {
+		return true
+	}
 	if n%2 == 0 {
 		return false
 	}
