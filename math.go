@@ -1,6 +1,6 @@
 package box
 
-// Is prime returns true if input n is a prime number
+// IsPrime returns true if input n is a prime number
 func IsPrime(n int) bool {
 	if n%2 == 0 {
 		return false
